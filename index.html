@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <wrapper class="wrapper">
+      <div class="display">
+        <!-- <input type="text" placeholder="0" id="display" inputmode="numeric" /> -->
+        <input
+          name="display"
+          type="text"
+          placeholder="0"
+          id="display"
+          onkeypress="return isNumberKey(event)"
+          value=""
+        />
+      </div>
+
+      <div class="dialer">
+        <button class="answer">ANS</button>
+        <button class="cancel">c</button>
+        <button class="delete">←</button>
+        <button class="seven" id="nums">7</button>
+        <button class="eight" id="nums">8</button>
+        <button class="nine" id="nums">9</button>
+        <button class="zero" id="nums">0</button>
+        <button class="one" id="nums">1</button>
+        <button class="two" id="nums">2</button>
+        <button class="three" id="nums">3</button>
+        <button class="four" id="nums">4</button>
+        <button class="five" id="nums">5</button>
+        <button class="six" id="nums">6</button>
+        <button class="coma" id="nums">,</button>
+        <button class="equals" id="equals">=</button>
+        <div class="operations">
+          <button class="plus" id="nums">+</button>
+          <button class="minus" id="nums">-</button>
+          <button class="times" id="nums">*</button>
+          <button class="divide" id="nums">÷</button>
+        </div>
+      </div>
+    </wrapper>
+  </body>
+  <script src="main.js"></script>
+</html>
